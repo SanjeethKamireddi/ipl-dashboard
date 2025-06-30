@@ -1,4 +1,5 @@
-interface LiveMatch {
+/* eslint-disable @typescript-eslint/no-unused-vars */
+export interface LiveMatch {
   status: string;
   teams: string[];
   venue: string;
@@ -9,7 +10,7 @@ interface LiveMatch {
   currentInning: string;
 }
 
-interface TeamStats {
+export interface TeamStats {
   pos: string;
   team: string;
   played: string;
@@ -22,7 +23,7 @@ interface TeamStats {
   points: string;
 }
 
-interface MatchSchedule {
+export interface MatchSchedule {
   date: string;
   teams: string[];
   venue: string;

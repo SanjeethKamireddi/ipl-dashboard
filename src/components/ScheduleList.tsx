@@ -1,5 +1,6 @@
 "use client";
 
+import { MatchSchedule } from "@/types/match";
 import { useEffect, useState } from "react";
 
 const ScheduleList = () => {

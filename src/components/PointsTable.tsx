@@ -1,5 +1,6 @@
 "use client";
 
+import { TeamStats } from "@/types/match";
 import { useEffect, useState } from "react";
 
 const PointsTable = () => {

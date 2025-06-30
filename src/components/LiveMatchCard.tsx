@@ -1,5 +1,6 @@
 "use client";
 
+import { LiveMatch } from "@/types/match";
 import { useEffect, useRef, useState } from "react";
 
 const LiveMatchCard = () => {

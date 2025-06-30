@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import puppeteer from "puppeteer";
 import pointsTableFallback from "@/data/pointsTable.json";
 import { getCache, setCache } from "../../../../lib/cache";
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function GET(req: NextRequest) {
   const cacheKey = "pointsTable";
   const cached = getCache(cacheKey);
@@ -59,7 +59,9 @@ export async function GET(req: NextRequest) {
 
     setCache(cacheKey, data);
     return NextResponse.json({ pointsTable: data });
-  } catch (error) {
+  } 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  catch (error) {
     return NextResponse.json(
       { pointsTable: pointsTableFallback, fallback: true },
       { status: 200 }

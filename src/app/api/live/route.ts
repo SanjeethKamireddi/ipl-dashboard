@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import liveMatchFallback from "@/data/liveMatch.json";
 import puppeteer from "puppeteer";
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function GET(req: NextRequest) {
   try {
     const browser = await puppeteer.launch({
@@ -64,7 +64,9 @@ export async function GET(req: NextRequest) {
     }
 
     return NextResponse.json({ match: data });
-  } catch (error) {
+  } 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  catch (error) {
     return NextResponse.json(
       { match: liveMatchFallback, fallback: true },
       { status: 200 }
