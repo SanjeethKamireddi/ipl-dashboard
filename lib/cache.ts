@@ -1,6 +1,5 @@
 const cache: Record<string, { data: any; expiresAt: number }> = {}
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function getCache(key: string) {
   const entry = cache[key]
   const now = Date.now()
@@ -13,8 +12,8 @@ export function getCache(key: string) {
   console.log(`Cache MISS for key: ${key}`)
   return null
 }
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function setCache(key: string, data: any, ttl = 1000 * 60 * 2) { // 2 mins
+
+export function setCache(key: string, data: any, ttl = 1000 * 60 * 2) {
   console.log(`Setting cache for key: ${key} with TTL ${ttl / 1000}s`)
   cache[key] = {
     data,

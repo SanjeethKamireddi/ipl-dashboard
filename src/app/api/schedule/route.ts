@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import scheduleFallback from "@/data/matchSchedule.json";
 import puppeteer from "puppeteer";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 export async function GET(req: NextRequest) {
   try {
     const browser = await puppeteer.launch({
@@ -44,7 +44,7 @@ export async function GET(req: NextRequest) {
 
     return NextResponse.json({ schedule: data });
   } 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   catch (error) {
     return NextResponse.json(
       { schedule: scheduleFallback, fallback: true },
