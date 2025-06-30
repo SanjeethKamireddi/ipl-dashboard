@@ -1,0 +1,38 @@
+[
+  {
+    "pos": "1",
+    "team": "Kolkata Knight Riders",
+    "played": "14",
+    "won": "9",
+    "lost": "3",
+    "nr": "2",
+    "nrr": "+1.428",
+    "for": "2389/225.0",
+    "against": "2135/232.2",
+    "points": "20"
+  },
+  {
+    "pos": "2",
+    "team": "Sunrisers Hyderabad",
+    "played": "14",
+    "won": "8",
+    "lost": "5",
+    "nr": "1",
+    "nrr": "+0.414",
+    "for": "2605/247.0",
+    "against": "2599/256.3",
+    "points": "17"
+  },
+  {
+    "pos": "3",
+    "team": "Rajasthan Royals",
+    "played": "14",
+    "won": "8",
+    "lost": "5",
+    "nr": "1",
+    "nrr": "+0.273",
+    "for": "2322/240.0",
+    "against": "2280/239.1",
+    "points": "17"
+  }
+]

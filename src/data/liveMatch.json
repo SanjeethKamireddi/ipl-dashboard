@@ -1,0 +1,11 @@
+{
+  "status": "LIVE",
+  "teams": ["Mumbai Indians", "Chennai Super Kings"],
+  "venue": "Wankhede Stadium, Mumbai",
+  "matchTime": "7:30 PM IST",
+  "score": {
+    "Mumbai Indians": "182/4 (17.2)",
+    "Chennai Super Kings": "161/8 (20.0)"
+  },
+  "currentInning": "Mumbai Indians batting"
+}
